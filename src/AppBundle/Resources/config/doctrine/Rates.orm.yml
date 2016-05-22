@@ -1,0 +1,19 @@
+AppBundle\Entity\Rates:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\RatesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '10'
+        date:
+            type: date
+        qty:
+            type: float
+    lifecycleCallbacks: {  }
